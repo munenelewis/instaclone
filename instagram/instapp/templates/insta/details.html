@@ -1,0 +1,17 @@
+
+<h1></h1>
+
+
+<ul>
+    
+
+
+{% for images in image.images_set.all %}
+{{images.user}}
+    <li>{{images.bio}}</li>
+<img src="{{images.profile_photo}}" alt="">
+{% endfor %}
+    
+
+
+</ul>
